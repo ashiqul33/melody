@@ -1,0 +1,93 @@
+.present_fee{
+    font-family: myRegularFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #000000;
+}
+.previous_fee{
+    font-family: myRegularFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    text-decoration-line: line-through;
+    color: rgba(188, 188, 188, 0.8);
+}
+.course_details_title{
+    font-family: myBoldFont600;
+    font-style: normal;
+    font-size: 22px;
+    color: #000000;
+}
+.enroll_now_btn{
+    background: linear-gradient(269.45deg, #C70F8A 0.39%, #CC477E 94.8%);
+    border-radius: 5px;
+    font-family: myBoldFont500;
+    font-style: normal;
+    font-size: 17px;
+}
+.overflow_y_auto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 1rem 0;
+}
+.CourseContent_accordion .accordion-button{
+    display: block !important;
+    position: relative;
+}
+.CourseContent_accordion .accordion-button::after{
+    display: block !important;
+    position: absolute;
+    right: 5px;
+    top: 39%
+
+}
+.course_details_card{
+    width: 100%;
+    background: white;
+    border-radius: 18px;
+}
+.course_details_card_tab1{
+    background-image: linear-gradient(to right, #822EA8  50%, #8C3EAF  100%) !important;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.course_details_card_tab1:hover {
+    background-position: right center !important;
+    color: #fff;
+    text-decoration: none;
+}
+.course_details_card_tab2{
+    background-image: linear-gradient(to right, #D90E90  50%, #BB2986  100%) !important;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.course_details_card_tab2:hover {
+    background-position: right center !important;
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width: 767px) {
+    .overflow_y_auto{
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
