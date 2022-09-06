@@ -1,0 +1,356 @@
+/****banner_section***/
+.banner_section{
+    width: 100%;
+    height: 600px;
+    background-image: url("../../../assets/images/bannerbg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    transition: all 0.4s ease;
+}
+.banner_section_heading{
+    font-family: myRegularFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 49px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+}
+.banner_section_text{
+    font-family: myBoldFont500;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+}
+.banner_section_btn{
+    background: linear-gradient(270deg, #C70F8A 0%, #CC477E 100%);
+    border-radius: 5px;
+    font-family: myBoldFont500;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+    border: none !important;
+}.banner_section_btn:hover{
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .banner_section{
+        height: 300px;
+    }
+    .banner_section_heading{
+        font-size: 25px;
+        line-height: 29px;
+    }
+    .banner_section_text{
+        font-size: 15px;
+    }
+    .banner_section_btn{
+        font-size: 15px;
+    }
+}
+/****banner_section***/
+/****featured_courses_section***/
+.featured_courses_section{
+    width: 100%;
+    padding: 2rem 0;
+}
+.featured_courses_section_heading{
+    font-family: myBoldFont600;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: -1px;
+    color: #36274B;
+}
+.featured_courses_section_text{
+    font-family: myRegularFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #000000;
+}
+.featured_courses_section_card_top{
+    position: absolute;
+    bottom: 8px;
+    left: 1rem;
+    color: #FFFFFF;
+}
+.featured_courses_section_card_title{
+    font-family: myBoldFont500;
+    font-style: normal;
+    font-size: 20px;
+    color: #000000;
+}
+.trainer{
+    font-family: myRegularFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #AEBAC2;
+}
+.present_fee{
+    font-family: myRegularFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #000000;
+}
+.previous_fee{
+    font-family: myRegularFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    text-decoration-line: line-through;
+    color: rgba(188, 188, 188, 0.8);
+}
+.featured_courses_section_card_btn{
+    background: #36274B;
+    border-radius: 5px !important;
+    font-family: myRegularFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    position: relative;
+}
+.featured_courses_section_card_btn:hover{
+    color: #FFFFFF;
+}
+.featured_courses_section_card_btn img{
+   position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+}
+.featured_courses_section_card_more_btn{
+    font-family: myBoldFont600;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #36274B;
+}
+/****featured_courses_section***/
+/****what_we_teach_section***/
+.what_we_teach_section{
+    width: 100%;
+    background-image: url("../../../assets/images/what-we-teach-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    padding: 2rem 0;
+}
+.what_we_teach_section_heading{
+    font-family: myBoldFont600;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+}
+.what_we_teach_section_text{
+    font-family: myRegularFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+}
+.what_we_teach_section_card{
+    background: #26264B;
+    border-radius: 14px;
+    min-height: 300px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 576px) {
+    .what_we_teach_section_card{
+        min-height: 215px;
+    }
+}
+/****what_we_teach_section***/
+/****our_instructors_section***/
+.our_instructors_section{
+    width: 100%;
+    padding: 2rem 0;
+}
+.our_instructors_section_heading{
+    font-family: myBoldFont600;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: -1px;
+    color: #36274B;
+}
+.our_instructors_section_text{
+    font-family: myRegularFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #36274B;
+}
+.our_instructors_section_card{
+    background-color: #FFFFFF !important;
+    border: 1px solid #D9E1E7 !important;
+    box-sizing: border-box;
+    min-height: 300px;
+    transition: background-color 2s ease;
+}
+.our_instructors_section_card_img_section{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin: 10px auto;
+}
+.our_instructors_section_card_img{
+    width: 100%;
+    border-radius: 100%;
+}
+.see_icon{
+    width: 40px;
+    height: 40px;
+    background-color: #6644B8;
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    bottom: 0;
+    color: #ffffff;
+    transition: color 2s ease;
+    transition: background-color 2s ease;
+}
+.see_icon:before{
+    font-weight: 500 !important;
+    font-size: 20px !important;
+}
+.our_instructors_section_card_heading{
+    font-family: myBoldFont500;
+    font-style: normal;
+    font-size: 22px;
+    letter-spacing: -1px;
+    color: #000000;
+    transition: color 2s ease;
+}
+.our_instructors_section_card_subheading{
+    font-family: myBoldFont500;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: -1px;
+    color: #6644B8;
+    transition: color 2s ease;
+}
+.our_instructors_section_card:hover{
+    background-color: #6644B8 !important;
+    border: 1px solid #D9E1E7;
+}
+.our_instructors_section_card:hover .our_instructors_section_card_heading,
+.our_instructors_section_card:hover .our_instructors_section_card_subheading{
+    color: #FFFFFF;
+}
+.our_instructors_section_card:hover .see_icon{
+    background-color: #FFFFFF;
+    color: #6644B8;
+}
+/****our_instructors_section***/
+/****insights_section***/
+.insights_section{
+    width: 100%;
+    padding: 2rem 0;
+    background-image: url("../../../assets/images/insights_section-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+.insights_section_heading{
+    font-family: myBoldFont600;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: -1px;
+    color: #ffffff;
+}
+.insights_section_text{
+    font-family: myRegularFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #ffffff;
+}
+.insights_section_card_heading{
+    font-family: myRegularFont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+.insights_section_card_subheading{
+    font-family: myBoldFont500;
+    font-style: normal;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+/****insights_section***/
+/****question_section***/
+.question_section{
+    width: 100%;
+    padding: 2.5rem 0;
+}
+.question_section_heading{
+    font-family: myBoldFont600;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: -1px;
+    color: #36274B;
+}
+/****question_section***/
+
+/****contact_section***/
+.contact_section{
+    width: 100%;
+    padding: 2rem 0 3rem;
+    background-image: url("../../../assets/images/contact_section-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+.contact_section_heading{
+    font-family: myBoldFont600;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: -1px;
+    color: #ffffff;
+}
+.insights_section_text{
+    font-family: myRegularFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #ffffff;
+}
+.contact_section_btn{
+    background: linear-gradient(270deg, #C70F8A 0%, #CC477E 100%);
+    border-radius: 5px !important;
+    font-family: myBoldFont500;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+}
+.contact_section_btn:hover{
+    background: linear-gradient(270deg, #bb0982 0%, #c04578 100%);
+    color: #FFFFFF;
+}
+/****contact_section***/

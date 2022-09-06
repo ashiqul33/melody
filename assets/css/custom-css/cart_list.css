@@ -1,0 +1,50 @@
+.cart_list_card{
+    background: #FFFFFF;
+    border-radius: 6px !important;
+    margin-bottom: 15px;
+    border: none !important;
+}
+.cart_list_card_title{
+    font-family: myBoldFont600;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 6px !important;
+}
+.cart_list_card_text{
+    font-family: myRegularFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #000000;
+}
+.cart_list_card_remove_btn{
+    background: #FFFFFF !important;
+    border: 1px solid #D9E1E7 !important;
+}
+.cart_list_card_remove_btn:hover{
+    background: #a9a6a6 !important;
+    color: #ffffff;
+    border: 1px solid #D9E1E7 !important;
+}
+.checkout_card{
+    background: #FFFFFF;
+    border-radius: 6px;
+    border: none !important;
+}
+.checkout_card_heading{
+    font-family: myBoldFont600;
+    font-style: normal;
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+.checkout_btn{
+    background: linear-gradient(270deg, #6644B8 0%, #665AE1 100%);
+    border-radius: 5px;
+    font-family: myRegularFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF !important;
+}
