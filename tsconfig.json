@@ -23,8 +23,9 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "es2018",
-    "incremental": true
+    "target": "ES2018",
+    "incremental": true,
+    "baseUrl": "."
   },
   "include": [
     "next-env.d.ts",
