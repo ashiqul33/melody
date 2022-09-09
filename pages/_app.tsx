@@ -1,4 +1,5 @@
-import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/scss/bootstrap.scss";
+import "bootstrap-icons/font/bootstrap-icons.scss";
 
 import "../styles/cart_list.scss";
 import "../styles/common.scss";

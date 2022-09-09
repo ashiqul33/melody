@@ -1,23 +1,8 @@
 import { NextPage } from "next";
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 
 const Header: NextPage = () => {
-  useEffect(() => {
-    const toggle = document.getElementById("toggle");
-    const mobileNav = document.getElementById("side-drawer");
-
-    // toggle.onclick = function () {
-    //   toggle?.classList.toggle("toggle_active");
-    //   mobileNav?.classList.toggle("sidebar_active");
-    // };
-
-    function closeSideDrawer() {
-      const toggle = document.getElementById("toggle");
-      const mobileNav = document.getElementById("side-drawer");
-      toggle?.classList.remove("toggle_active");
-      mobileNav?.classList.remove("sidebar_active");
-    }
-  }, []);
+  const [activeDrawer, setActiveDrawer] = useState(false);
 
   return (
     <div>
@@ -35,7 +20,11 @@ const Header: NextPage = () => {
           </a>
 
           <button
-            className="navbar-toggler shadow-none text-white"
+            onClick={() => setActiveDrawer(!activeDrawer)}
+            className={
+              "navbar-toggler shadow-none text-white" +
+              (activeDrawer ? "toggle_active" : "")
+            }
             type="button"
             id="toggle"
             data-bs-toggle="collapse"
@@ -43,7 +32,6 @@ const Header: NextPage = () => {
             aria-controls="bdNavbar"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            // onClick="myFunction()"
           >
             <span className="bi bi-list"></span>
             <span className="bi bi-x-lg"></span>
@@ -83,7 +71,10 @@ const Header: NextPage = () => {
           </div>
         </nav>
       </header>
-      <div className="sidebar" id="side-drawer">
+      <div
+        className={`sidebar ${activeDrawer ? "sidebar_active" : ""}`}
+        id="side-drawer"
+      >
         <ul className="list-unstyled">
           <li className="nav-item mb-1">
             <a className="sidebar_link" href="#">
@@ -115,7 +106,7 @@ const Header: NextPage = () => {
       <div
         id="side-drawer-void"
         className="position-fixed"
-        // onClick="closeSideDrawer()"
+        onClick={() => setActiveDrawer(false)}
       ></div>
     </div>
   );
