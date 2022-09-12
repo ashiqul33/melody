@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import React from "react";
 import Banner from "./Banner";
+import Contacts from "./Contacts";
 import FAQ from "./FAQ";
 import Featured from "./Featured";
 import Insights from "./Insights";
@@ -18,7 +19,7 @@ const Body: NextPage = () => {
       <Upcoming />
       <Insights />
       <FAQ />
-      {/* <Contacts /> */}
+      <Contacts />
     </div>
   );
 };
