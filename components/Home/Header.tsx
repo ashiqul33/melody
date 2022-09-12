@@ -56,9 +56,11 @@ const Header: NextPage = () => {
                 </a>
               </li>
               <li className="nav-item col-6 col-md-auto">
-                <a className="nav-link p-2 text-white" href="#">
-                  Signup
-                </a>
+                <Link href="/register">
+                  <a className="nav-link p-2 text-white" href="#">
+                    Signup
+                  </a>
+                </Link>
               </li>
               <li className="nav-item col-6 col-md-auto">
                 <Link href="/login">
@@ -92,9 +94,11 @@ const Header: NextPage = () => {
             </a>
           </li>
           <li className="nav-item mb-1">
-            <a className="sidebar_link" href="#">
-              Signup
-            </a>
+            <Link href="/register">
+              <a className="sidebar_link" href="#">
+                Signup
+              </a>
+            </Link>
           </li>
           <li className="nav-item">
             <Link href="/login">
