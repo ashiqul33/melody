@@ -1,24 +1,25 @@
 import { NextPage } from "next";
 import React from "react";
+
 import courseLogo from "../../assets/images/courses1.svg";
 import trainerImage from "../../assets/images/trainer.svg";
 import FeaturedCourse from "./FeaturedCourse";
 
-const Featured: NextPage = () => {
+const Upcoming: NextPage = () => {
   return (
     <div>
       <section className="featured_courses_section">
         <div className="container">
           <div className="text-center">
             <h3 className="featured_courses_section_heading">
-              Featured Courses
+              Up Coming Courses
             </h3>
             <p className="featured_courses_section_text">
               Start with any of our 8 in-depth featured courses
             </p>
           </div>
           <div className="row">
-            <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div className="col-12 col-sm-6 col-md-4 mb-3">
               <FeaturedCourse
                 logo={courseLogo}
                 title={"FINGERSTYLE"}
@@ -30,7 +31,7 @@ const Featured: NextPage = () => {
                 x_price={"Tk. 1400"}
               />
             </div>
-            <div className="col-12 col-sm-6 col-md-4  col-lg-3 mb-3">
+            <div className="col-12 col-sm-6 col-md-4 mb-3">
               <FeaturedCourse
                 logo={courseLogo}
                 title={"FINGERSTYLE"}
@@ -42,7 +43,7 @@ const Featured: NextPage = () => {
                 x_price={"Tk. 1400"}
               />
             </div>
-            <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div className="col-12 col-sm-6 col-md-4 mb-3">
               <FeaturedCourse
                 logo={courseLogo}
                 title={"FINGERSTYLE"}
@@ -54,12 +55,6 @@ const Featured: NextPage = () => {
                 x_price={"Tk. 1400"}
               />
             </div>
-          </div>
-          <div className="text-center">
-            <a className="btn btn_focus featured_courses_section_card_more_btn">
-              <i className="bi bi-plus-circle-fill"></i>
-              View all Course
-            </a>
           </div>
         </div>
       </section>
@@ -67,4 +62,4 @@ const Featured: NextPage = () => {
   );
 };
 
-export default Featured;
+export default Upcoming;
