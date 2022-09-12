@@ -1,10 +1,11 @@
 import { FeaturedCourse, Header } from "components";
+import { NextPage } from "next";
 import React from "react";
 
 import courseLogo from "../../assets/images/courses1.svg";
 import trainerImage from "../../assets/images/trainer.svg";
 
-const Courses = () => {
+const Courses: NextPage = () => {
   return (
     <div>
       <Header />
