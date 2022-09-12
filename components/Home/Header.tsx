@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Header: NextPage = () => {
@@ -60,12 +61,11 @@ const Header: NextPage = () => {
                 </a>
               </li>
               <li className="nav-item col-6 col-md-auto">
-                <a
-                  className="nav-link p-2 ps-4 pe-4 text-white login_btn"
-                  href="#"
-                >
-                  Login
-                </a>
+                <Link href="/login">
+                  <a className="nav-link p-2 ps-4 pe-4 text-white login_btn">
+                    Login
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -97,9 +97,11 @@ const Header: NextPage = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="sidebar_link bg-pink justify-content-center" href="#">
-              Login
-            </a>
+            <Link href="/login">
+              <a className="sidebar_link bg-pink justify-content-center">
+                Login
+              </a>
+            </Link>
           </li>
         </ul>
       </div>
