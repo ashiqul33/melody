@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import React from "react";
 import Banner from "./Banner";
+import FAQ from "./FAQ";
 import Featured from "./Featured";
 import Insights from "./Insights";
 import InstructorsList from "./InstructorsList";
@@ -16,7 +17,7 @@ const Body: NextPage = () => {
       <InstructorsList />
       <Upcoming />
       <Insights />
-      {/* <FAQ /> */}
+      <FAQ />
       {/* <Contacts /> */}
     </div>
   );
