@@ -1,9 +1,10 @@
+import { NextPage } from "next";
 import React from "react";
 import courseLogo from "../../assets/images/courses1.svg";
 import trainerImage from "../../assets/images/trainer.svg";
 import FeaturedCourse from "./FeaturedCourse";
 
-const Featured = () => {
+const Featured: NextPage = () => {
   return (
     <div>
       <section className="featured_courses_section">

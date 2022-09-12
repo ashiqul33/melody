@@ -1,8 +1,9 @@
+import { NextPage } from "next";
 import Image from "next/image";
 import React from "react";
 import cartLogo from "../../assets/images/cart.svg";
 
-const FeaturedCourse = (props: {
+interface Props {
   logo: string;
   title: string;
   subtitle: string;
@@ -11,7 +12,9 @@ const FeaturedCourse = (props: {
   instructor_name: string;
   price: string;
   x_price: string;
-}) => {
+}
+
+const FeaturedCourse: NextPage<Props> = (props) => {
   return (
     <div className="card featured_courses_section_card p-4 rounded-14">
       <div className="position-relative mb-2">
@@ -46,7 +49,7 @@ const FeaturedCourse = (props: {
           href="#"
           className="btn featured_courses_section_card_btn btn_focus w-100"
         >
-          <Image src={cartLogo} alt="..."/>
+          <Image src={cartLogo} alt="..." />
           Buy This Course
         </a>
       </div>
