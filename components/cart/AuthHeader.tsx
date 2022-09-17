@@ -1,10 +1,7 @@
 import { NextPage } from "next";
-import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 
-const Header: NextPage = () => {
-  const [activeDrawer, setActiveDrawer] = useState(false);
-
+const AuthHeader: NextPage = () => {
   return (
     <div>
       <header className="navbar navbar-expand-md bd-navbar top_nav fixed-top">
@@ -12,22 +9,16 @@ const Header: NextPage = () => {
           className="container flex-wrap flex-md-nowrap"
           aria-label="Main navigation"
         >
-          <Link href="/">
-            <a
-              className="navbar-brand p-0 me-2 text-white"
-              href="#"
-              aria-label="Bootstrap"
-            >
-              LOGO
-            </a>
-          </Link>
+          <a
+            className="navbar-brand p-0 me-2 text-white"
+            href="#"
+            aria-label="Bootstrap"
+          >
+            LOGO
+          </a>
 
           <button
-            onClick={() => setActiveDrawer(!activeDrawer)}
-            className={
-              "navbar-toggler shadow-none text-white" +
-              (activeDrawer ? "toggle_active" : "")
-            }
+            className="navbar-toggler shadow-none text-white"
             type="button"
             id="toggle"
             data-bs-toggle="collapse"
@@ -43,11 +34,9 @@ const Header: NextPage = () => {
           <div className="collapse navbar-collapse" id="bdNavbar">
             <ul className="navbar-nav flex-row pt-2 py-md-0 ms-md-auto">
               <li className="nav-item col-6 col-md-auto">
-                <Link href="/courses">
-                  <a className="nav-link text-white p-2" href="#">
-                    Courses
-                  </a>
-                </Link>
+                <a className="nav-link text-white p-2" href="#">
+                  Courses
+                </a>
               </li>
               <li className="nav-item col-6 col-md-auto">
                 <a className="nav-link p-2 text-white" href="#">
@@ -60,34 +49,30 @@ const Header: NextPage = () => {
                 </a>
               </li>
               <li className="nav-item col-6 col-md-auto">
-                <Link href="/register">
-                  <a className="nav-link p-2 text-white" href="#">
-                    Signup
-                  </a>
-                </Link>
+                <a
+                  className="nav-link p-2 text-white profile"
+                  href="#"
+                  title="Profile"
+                >
+                  <i className="bi bi-person"></i>
+                </a>
               </li>
               <li className="nav-item col-6 col-md-auto">
-                <Link href="/login">
-                  <a className="nav-link p-2 ps-4 pe-4 text-white login_btn">
-                    Login
-                  </a>
-                </Link>
+                <a className="nav-link p-2 text-white add_cart" href="#">
+                  <i className="bi bi-basket3"></i>
+                  <span className="add_cart_count">4</span>
+                </a>
               </li>
             </ul>
           </div>
         </nav>
       </header>
-      <div
-        className={`sidebar ${activeDrawer ? "sidebar_active" : ""}`}
-        id="side-drawer"
-      >
+      <div className="sidebar" id="side-drawer">
         <ul className="list-unstyled">
           <li className="nav-item mb-1">
-            <Link href="/courses">
-              <a className="sidebar_link" href="#">
-                Courses
-              </a>
-            </Link>
+            <a className="sidebar_link" href="#">
+              Courses
+            </a>
           </li>
           <li className="nav-item mb-1">
             <a className="sidebar_link" href="#">
@@ -100,28 +85,19 @@ const Header: NextPage = () => {
             </a>
           </li>
           <li className="nav-item mb-1">
-            <Link href="/register">
-              <a className="sidebar_link" href="#">
-                Signup
-              </a>
-            </Link>
+            <a className="sidebar_link" href="#">
+              Signup
+            </a>
           </li>
           <li className="nav-item">
-            <Link href="/login">
-              <a className="sidebar_link bg-pink justify-content-center">
-                Login
-              </a>
-            </Link>
+            <a className="sidebar_link bg-pink justify-content-center" href="#">
+              Login
+            </a>
           </li>
         </ul>
       </div>
-      <div
-        id="side-drawer-void"
-        className="position-fixed"
-        onClick={() => setActiveDrawer(false)}
-      ></div>
     </div>
   );
 };
 
-export default Header;
+export default AuthHeader;
