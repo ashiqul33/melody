@@ -1,9 +1,9 @@
-import { Register } from "components";
+import { Courses } from "components";
 import { NextPage } from "next";
 import React from "react";
 
 const index: NextPage = () => {
-  return <Register />;
+  return <Courses />;
 };
 
 export default index;

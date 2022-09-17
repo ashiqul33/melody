@@ -12,13 +12,15 @@ const Header: NextPage = () => {
           className="container flex-wrap flex-md-nowrap"
           aria-label="Main navigation"
         >
-          <a
-            className="navbar-brand p-0 me-2 text-white"
-            href="#"
-            aria-label="Bootstrap"
-          >
-            LOGO
-          </a>
+          <Link href="/">
+            <a
+              className="navbar-brand p-0 me-2 text-white"
+              href="#"
+              aria-label="Bootstrap"
+            >
+              LOGO
+            </a>
+          </Link>
 
           <button
             onClick={() => setActiveDrawer(!activeDrawer)}
@@ -41,9 +43,11 @@ const Header: NextPage = () => {
           <div className="collapse navbar-collapse" id="bdNavbar">
             <ul className="navbar-nav flex-row pt-2 py-md-0 ms-md-auto">
               <li className="nav-item col-6 col-md-auto">
-                <a className="nav-link text-white p-2" href="#">
-                  Courses
-                </a>
+                <Link href="/courses">
+                  <a className="nav-link text-white p-2" href="#">
+                    Courses
+                  </a>
+                </Link>
               </li>
               <li className="nav-item col-6 col-md-auto">
                 <a className="nav-link p-2 text-white" href="#">
@@ -79,9 +83,11 @@ const Header: NextPage = () => {
       >
         <ul className="list-unstyled">
           <li className="nav-item mb-1">
-            <a className="sidebar_link" href="#">
-              Courses
-            </a>
+            <Link href="/courses">
+              <a className="sidebar_link" href="#">
+                Courses
+              </a>
+            </Link>
           </li>
           <li className="nav-item mb-1">
             <a className="sidebar_link" href="#">
